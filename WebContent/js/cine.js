@@ -30,8 +30,11 @@ function init() {
 function calcularEntrada(dia, edad) {
 	var precio = null;
 	var txt_precio = document.getElementById("precio");
+	
+	document.getElementById("mensaje_error").style.display="none";
+	
 	dia = dia.toLowerCase();
-	if (!isNaN(edad)) {
+	if (!isNaN(edad) && edad != "") {
 		switch (dia) {
 		case 'lunes':
 			if (edad <= 35) {
@@ -72,6 +75,8 @@ function calcularEntrada(dia, edad) {
 			break;
 
 		}// end switch
+	}else{
+		document.getElementById("mensaje_error").style.display="inline";
 	}
 	txt_precio.innerHTML = precio;
 }

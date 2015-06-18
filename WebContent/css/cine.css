@@ -61,11 +61,15 @@ h1 {
 #entrada_datos select {
 	margin-left: 1px;
 	width: 88px;
+	background-color: #000;
+	color: #fff;
 }
 
 #entrada_datos input {
 	width: 28px;
 	margin-left: 4px;
+	background-color: #000;
+	color: #fff;
 }
 
 #content {
@@ -82,23 +86,23 @@ h1 {
 }
 
 #txt_precio {
-  font-size: 22px;
-  color: #F5FFF6;
-  font-family: monospace;
-  position: absolute;
-  left: 10px;
-  bottom: 3px;
+	font-size: 22px;
+	color: #F5FFF6;
+	font-family: monospace;
+	position: absolute;
+	left: 10px;
+	bottom: 3px;
 }
 
 #precio {
-  margin-left: 16px;
-  font-size: 86px;
-  color: #F5FFF6;
-  font-family: monospace;
-  position: absolute;
-  right: 97px;
-  bottom: -11px;
-  text-align: right;
+	margin-left: 16px;
+	font-size: 86px;
+	color: #F5FFF6;
+	font-family: monospace;
+	position: absolute;
+	right: 97px;
+	bottom: -11px;
+	text-align: right;
 }
 
 #euro {
@@ -108,4 +112,14 @@ h1 {
 	font-size: 86px;
 	color: #F5FFF6;
 	font-family: monospace;
+}
+
+#mensaje_error {
+	position: relative;
+	left: 25px;
+	top: 10px;
+	border: 2px solid red;
+	color: red;
+	display: none;
+	padding: 5px;
 }
