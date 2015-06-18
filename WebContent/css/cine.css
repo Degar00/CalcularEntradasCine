@@ -1,0 +1,111 @@
+/*   
+	version:  1.0
+	author:   David Garcia
+	date: 	  20150618
+		
+*/
+
+/* 
+   RESET    
+   Resetear todos los estilos para cualquier navegador
+*/
+@import url("reset.css");
+
+/***************************** 
+      ClearFix
+*******************************/
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+/*******************************
+		Etiquetas
+*******************************/
+body {
+	width: 300px;
+	height: 400px;
+	background-image: url('../img/calcular_entradas_limpio.jpg');
+	background-repeat: no-repeat;
+}
+
+h1 {
+	color: rgb(79, 177, 190);
+	font-size: 26px;
+	margin-top: 10px;
+	margin-left: 40px;
+	font-weight: bold;
+	font-family: serif;
+}
+
+#entrada_datos {
+	margin-top: 30px;
+}
+
+#lListaDias {
+	margin-left: 45px;
+}
+
+#lEdad {
+	margin-left: 11px;
+}
+
+#entrada_datos select {
+	margin-left: 1px;
+	width: 88px;
+}
+
+#entrada_datos input {
+	width: 28px;
+	margin-left: 4px;
+}
+
+#content {
+	position: absolute;
+	width: 300px;
+	height: 400px;
+}
+
+#muestra_precio {
+	position: absolute;
+	left: 18px;
+	width: 300px;
+	bottom: 18px;
+}
+
+#txt_precio {
+  font-size: 22px;
+  color: #F5FFF6;
+  font-family: monospace;
+  position: absolute;
+  left: 10px;
+  bottom: 3px;
+}
+
+#precio {
+  margin-left: 16px;
+  font-size: 86px;
+  color: #F5FFF6;
+  font-family: monospace;
+  position: absolute;
+  right: 97px;
+  bottom: -11px;
+  text-align: right;
+}
+
+#euro {
+	position: absolute;
+	right: 36px;
+	bottom: -12px;
+	font-size: 86px;
+	color: #F5FFF6;
+	font-family: monospace;
+}

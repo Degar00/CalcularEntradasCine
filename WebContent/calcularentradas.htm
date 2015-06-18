@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+
+<base href="/CalcularEntradasCine/">
+
+<meta charset="utf-8">
+
+<title>Calcular precio entradas cine</title>
+<meta name="description"
+	content="Calucla el precio de las entradas del cine">
+<meta name="author" content="David Garcia">
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" type="text/css" href="css/cine.css?v=1.0">
+
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+
+<body onload="init();">
+
+	<div id="content">
+
+		<h1>¡Calcula tu Entrada!</h1>
+
+		<div id="entrada_datos">
+			<form onsubmit="return false">
+				<label id="lListaDias" for="listaDias">Dia:</label> <select
+					id="listaDias" onchange="calcularEntrada(this.value,edad.value);"></select>
+				<label id="lEdad" for="edad">Edad:</label> <input type="text"
+					id="edad" maxlength=2 placeholder="0-99" required
+					pattern="[0-9]{1,2}" value=16
+					oninvalid="setCustomValidity('La edad esta comprendida entre 0 y 99');"
+					onchange="calcularEntrada(listaDias.value,this.value);"
+					onclick="this.value=''" />
+			</form>
+		</div>
+		<div id="muestra_precio">
+			<span id="txt_precio">PRECIO</span> <span id="precio"></span> <span
+				id="euro">€</span>
+		</div>
+	</div>
+
+	<script src="js/cine.js"></script>
+</body>
+</html>
